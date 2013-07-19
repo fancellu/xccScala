@@ -154,11 +154,11 @@ val refs=toSeqAnyRef(session.submitRequestWith(
  refs.foreach(x=>println(x+" "+x.getClass))
 ```
 
->    Hello world adhoc 19:09:44+01:00 class java.lang.String
->    1 class java.lang.Integer
->    2 class java.lang.Integer
->    3 class java.lang.Integer
->    123 class java.lang.Integer
+>     Hello world adhoc 19:09:44+01:00 class java.lang.String
+>     1 class java.lang.Integer
+>     2 class java.lang.Integer
+>     3 class java.lang.Integer
+>     123 class java.lang.Integer
 
 ## Adhoc with binding of scala xml ##
 ```scala
@@ -169,11 +169,11 @@ val refs=toSeqAnyRef(session.submitRequestWith(
   refs.foreach(x=>println(x+" "+x.getClass))
 ```
 
->    Hello world adhoc 19:09:44+01:00 class java.lang.String
->    1 class java.lang.Integer
->    2 class java.lang.Integer
->    3 class java.lang.Integer
->    <root>someelem</root> class scala.xml.Elem
+>     Hello world adhoc 19:09:44+01:00 class java.lang.String
+>     1 class java.lang.Integer
+>     2 class java.lang.Integer
+>     3 class java.lang.Integer
+>     <root>someelem</root> class scala.xml.Elem
 
 ##Many fluent Bindings
 ```scala
