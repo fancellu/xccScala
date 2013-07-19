@@ -5,7 +5,7 @@
 
 **XCCscala** is a Scala Library to invoke XQuery against a **MarkLogic** database via XCC.
 
-Requires Scala 2.10+
+Requires Scala 2.10+ and XCC v6+ http://developer.marklogic.com/products/xcc
 
 Firstly, make sure that your **XCC** java driver jars are included and are working.
 Perhaps run some java to make sure its all up and running.
@@ -236,11 +236,11 @@ val refs=toSeqAnyRef(session.invoke("hello.xqy"))
 refs.foreach(x=>println(x+" "+x.getClass))
 ```
 
->    Hello world 19:37:23+01:00 class java.lang.String
->    1 class java.lang.Integer
->    2 class java.lang.Integer
->    3 class java.lang.Integer
->    <no_variable_x/> class scala.xml.Elem
+>     Hello world 19:37:23+01:00 class java.lang.String
+>     1 class java.lang.Integer
+>     2 class java.lang.Integer
+>     3 class java.lang.Integer
+>     <no_variable_x/> class scala.xml.Elem
 
 ## Invoking a module with binding ##
 ```scala
@@ -248,11 +248,11 @@ val refs=toSeqAnyRef(session.invokeWith("hello.xqy"){_.int("x",123)})
 refs.foreach(x=>println(x+" "+x.getClass))
 ```
 
->    Hello world 19:37:23+01:00 class java.lang.String
->    1 class java.lang.Integer
->    2 class java.lang.Integer
->    3 class java.lang.Integer
->    123 class java.lang.Integer
+>     Hello world 19:37:23+01:00 class java.lang.String
+>     1 class java.lang.Integer
+>     2 class java.lang.Integer
+>     3 class java.lang.Integer
+>     123 class java.lang.Integer
 
 ##A few items of note
 
