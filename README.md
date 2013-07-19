@@ -5,6 +5,8 @@
 
 **XCCscala** is a Scala Library to invoke XQuery against a **MarkLogic** database via XCC.
 
+It provides Scala interfaces, metaphors and conversions that lead to tighter code and less boilerplate
+
 Requires Scala 2.10+ and XCC v6+ http://developer.marklogic.com/products/xcc
 
 Firstly, make sure that your **XCC** java driver jars are included and are working.
