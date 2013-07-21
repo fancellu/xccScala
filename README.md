@@ -57,8 +57,8 @@ ints.foreach(println)
 ## DB query returned as sequence of strings ##
 ```scala
 val strings: Seq[String] = 
-    session("/PLAY[TITLE='The Tragedy of Antony and Cleopatra']//SPEECH[SPEAKER='DOLABELLA']")
-    strings foreach (str => println("\nSPEECH=" + str))
+  session("/PLAY[TITLE='The Tragedy of Antony and Cleopatra']//SPEECH[SPEAKER='DOLABELLA']")
+  strings foreach (str => println("\nSPEECH=" + str))
 ```
 
 >     SPEECH=<SPEECH>
@@ -74,9 +74,9 @@ val strings: Seq[String] =
 ## DB query returned as sequence of XML Elems ##
 ```scala
 val elems: Seq[scala.xml.Elem] = 
-        session("/PLAY[TITLE='The Tragedy of Antony and Cleopatra']//SPEECH[SPEAKER='DOLABELLA']")
-    val pp = new PrettyPrinter(80, 2)
-    elems foreach (xml => println(pp.format(xml)))
+  session("/PLAY[TITLE='The Tragedy of Antony and Cleopatra']//SPEECH[SPEAKER='DOLABELLA']")
+  val pp = new PrettyPrinter(80, 2)
+  elems foreach (xml => println(pp.format(xml)))
 ```
 
 >     <SPEECH>
