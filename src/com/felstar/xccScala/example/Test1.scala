@@ -94,8 +94,7 @@ object Test1 {
 	        declare variable $datetime as xs:dateTime external;
 	 		($name,' ',$x+$y,'list=',
 			  $mydoc,$bool,$pi,$float,$date,$datetime)""")
-	 		{p=>
-	         p.int("x",1234).int("y",9999).string("name","Dino").
+	 		{_.int("x",1234).int("y",9999).string("name","Dino").
 	         document("mydoc", <somedoc>{str}</somedoc>).
 	         boolean("bool",true).double("pi",Math.PI).float("float",1.2f).	         
 	         date("date",new java.util.Date()).
