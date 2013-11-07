@@ -3,7 +3,7 @@
 
 *Author: [Dino Fancellu](http://dinofancellu.com)*
 
-**XCCscala** is a Scala Library to invoke XQuery against a **MarkLogic** database via XCC.
+**XCCscala** is a Scala Library to invoke XQuery against a **MarkLogic** database via XCC. You can also do that via my other project [XQS](https://github.com/fancellu/xqs), but in a vendor neutral manner
 
 It provides Scala interfaces, metaphors and conversions that lead to tighter code and less boilerplate
 
@@ -259,5 +259,9 @@ refs.foreach(x=>println(x+" "+x.getClass))
 
 Any feedback is appreciated. I understand that I may well not currently cover all use cases and look forward to improving XCCscala.
 You can find some examples of XCCscala being used in the com.felstar.xccScala.example package
+
+##Alternatives
+
+You may wish to use [XQS](https://github.com/fancellu/xqs), which sits on top of the industry standard XQJ API. This allows you to more easily switch XQuery engines. In my opinion it is also a nicer API.
 
 ## *A big thank you to Charles Foster of [XQJ.net](http://xqj.net) for the inspiration* ##
